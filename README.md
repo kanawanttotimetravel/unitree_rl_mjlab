@@ -1,3 +1,6 @@
+# About 
+This is a project to learn, experiment, and get hands-on experience with training, running and deploying a robot system. Please check out and support the orginal [Unitree RL Mjlab](https://github.com/unitreerobotics/unitree_rl_mjlab) project. 
+
 # Unitree RL Mjlab
 
 
