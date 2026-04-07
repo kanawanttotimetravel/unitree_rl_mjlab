@@ -80,7 +80,8 @@ python scripts/csv_to_npz.py \
 --input-file src/assets/motions/g1/dance1_subject2.csv \
 --output-name dance1_subject2.npz \
 --input-fps 30 \
---output-fps 50
+--output-fps 50 \
+--robot g1 # g1 or g1_23dof
 ```
 
 **npz文件默认保存路径为**：`src/motions/g1/...`
@@ -92,6 +93,10 @@ python scripts/csv_to_npz.py \
 ```bash
 python scripts/train.py Unitree-G1-Tracking-No-State-Estimation --motion_file=src/assets/motions/g1/dance1_subject2.npz --env.scene.num-envs=4096
 ```
+
+可用任务:
+  - Unitree-G1-Tracking-No-State-Estimation
+  - Unitree-G1-23Dof-Tracking-No-State-Estimation
 
 </div>
 
@@ -123,7 +128,7 @@ python scripts/play.py Unitree-G1-Flat --checkpoint_file=logs/rsl_rl/g1_velocity
 
 查看动作模仿训练效果：
 ```bash
-python scripts/play.py Unitree-G1-Tracking --motion_file=src/assets/motions/g1/dance1_subject2.npz --checkpoint_file=logs/rsl_rl/g1_tracking/2026-xx-xx_xx-xx-xx/model_xx.pt
+python scripts/play.py Unitree-G1-Tracking-No-State-Estimation --motion_file=src/assets/motions/g1/dance1_subject2.npz --checkpoint_file=logs/rsl_rl/g1_tracking/2026-xx-xx_xx-xx-xx/model_xx.pt
 ```
 
 **说明**：
