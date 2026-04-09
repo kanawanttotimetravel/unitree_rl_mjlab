@@ -15,3 +15,4 @@ src/assets/motions/g1/dance1_subject2.npz
 */__pycache__/*
 *.pyc
 *.pt 
+simulate/build
